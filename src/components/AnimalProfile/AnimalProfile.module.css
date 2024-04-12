@@ -1,0 +1,7 @@
+.animalProfile__container {
+  display: flex;
+  flex: 1;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: lightpink;
+}

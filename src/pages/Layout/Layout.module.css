@@ -1,0 +1,13 @@
+nav {
+  display: flex;
+  width: 100%;
+}
+
+.active{
+  font-size: larger;
+}
+
+.main__content__wrapper {
+  display: flex;
+  width: 100%;
+}

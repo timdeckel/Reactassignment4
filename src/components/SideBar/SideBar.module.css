@@ -1,0 +1,20 @@
+.SideBar__container {
+  background-color: lightblue;
+  color: rgb(47, 100, 102);
+  height: 100%;
+  min-height: 80vh;
+  width: 200px;
+  padding: 0.5rem;
+}
+
+.sidebar__header {
+  text-align: center;
+  font-size: 1.5rem;
+  border-bottom: 2px solid cadetblue;
+}
+
+.SideBar__content {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}

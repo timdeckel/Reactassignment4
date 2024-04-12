@@ -1,0 +1,25 @@
+nav {
+  position: relative;
+  display: flex;
+  width: 100%;
+  background-color: darkslategrey;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+nav > :first-child {
+  margin-right: auto;
+}
+
+nav > a {
+  text-decoration: none;
+  background-color: cadetblue;
+  border-bottom: 2px solid darkslategrey;
+  color: black;
+  padding: 0.1rem 1rem;
+}
+
+.active{
+  color: white;
+  border-bottom: none;
+}
