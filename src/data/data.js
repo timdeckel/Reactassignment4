@@ -1,5 +1,6 @@
 function Animal(
   name,
+  index,
   lifespan,
   group,
   food,
@@ -9,6 +10,7 @@ function Animal(
   found
 ) {
   this.name = name;
+  this.index = index;
   this.lifespan = lifespan;
   this.group = group;
   this.food = food;
@@ -20,6 +22,7 @@ function Animal(
 
 const echidna = new Animal(
   "echidna",
+  1,
   "50 years",
   "mammals",
   "insects such as ants and termites, beetle larvae and worms",
@@ -31,6 +34,7 @@ const echidna = new Animal(
 
 const frillNeckedLizard = new Animal(
   "frill-necked lizard",
+  2,
   "20 years",
   "reptile",
   "Small insects and spiders",
@@ -42,6 +46,7 @@ const frillNeckedLizard = new Animal(
 
 const cassowary = new Animal(
   "cassowary",
+  3,
   "20 years",
   "bird",
   "Plants matter like fruit, insects and small animals like mice and lizards",
@@ -53,6 +58,7 @@ const cassowary = new Animal(
 
 const tasmanianDevil = new Animal(
   "tasmanian devil",
+  4,
   "5 years",
   "mammals",
   "A predator, then eat meat from other animals such as wallabies and wombats",
@@ -64,6 +70,7 @@ const tasmanianDevil = new Animal(
 
 const hawksbillTurtle = new Animal(
   "hawksbill turtle",
+  5,
   "50 years",
   "reptile",
   "other animals (sponges & jellyfish), sea plants",
@@ -75,6 +82,7 @@ const hawksbillTurtle = new Animal(
 
 const kookaburra = new Animal(
   "kookaburra",
+  6,
   "20 years",
   "bird",
   "Insects and small animals including snakes, frogs and lizards",
@@ -86,6 +94,7 @@ const kookaburra = new Animal(
 
 const quokka = new Animal(
   "quokka",
+  7,
   "10 years",
   "mammals",
   "Plant eaters, they munch on shrubs and grasses",
@@ -97,6 +106,7 @@ const quokka = new Animal(
 
 const perentie = new Animal(
   "Perentie",
+  8,
   "20 years",
   "reptile",
   "Carnivore, they eat animals like kangaroos, rabbits, lizards and birds",
@@ -108,6 +118,7 @@ const perentie = new Animal(
 
 const yellowTailedBlackCockatoo = new Animal(
   "Yellow-tailed black cockatoo",
+  9,
   "41 years",
   "bird",
   "Fruit, seeds, and other plant material",
@@ -136,14 +147,6 @@ export const MammalList = animals.filter(
   (animal) => animal.group === "mammals"
 );
 export const BirdList = animals.filter((animal) => animal.group === "bird");
-
-const test = () => {
-  console.log("reptiles " + ReptileList[0].name);
-  console.log("mammals " + MammalList[0].name);
-  console.log("bird " + BirdList[0].name);
-  console.log(animals);
-};
-test();
 
 const AnimalLists = [ReptileList, BirdList, MammalList];
 

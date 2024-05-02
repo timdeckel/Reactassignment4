@@ -1,9 +1,9 @@
 import styles from "./AnimalProfile.module.css";
 
-const AnimalProfile = ({ text }) => {
+const AnimalProfile = ({ animal }) => {
   return (
     <div className={styles.animalProfile__container}>
-      <p>{text}</p>
+      <p>{animal.name}</p>
     </div>
   );
 };

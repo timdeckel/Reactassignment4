@@ -17,4 +17,15 @@
   display: flex;
   flex-direction: column;
   padding: 0.5rem;
+  gap: 0.5rem;
+}
+
+.SideBar__item {
+  background-color: cadetblue;
+  color: white;
+  padding-left: 0.5rem;
+}
+
+.SideBar__item:hover {
+  cursor: pointer;
 }
