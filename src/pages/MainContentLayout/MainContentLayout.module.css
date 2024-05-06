@@ -4,3 +4,19 @@
   padding: 1rem;
   background-color: cadetblue;
 }
+
+.content__structure {
+  display: flex;
+  flex: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .main__content {
+    min-height: 70vh;
+  }
+
+  .content__structure {
+    flex-direction: column;
+  }
+
+}

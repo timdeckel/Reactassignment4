@@ -6,6 +6,15 @@
   width: 200px;
   padding: 0.5rem;
 }
+.navbar__structure {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.hamburger__button {
+  display: none;
+}
 
 .sidebar__header {
   text-align: center;
@@ -28,4 +37,38 @@
 
 .SideBar__item:hover {
   cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .SideBar__container {
+    width: 100%;
+    min-height: 0;
+    height: auto;
+  }
+
+  
+  .SideBar__content {
+    display: none;
+    background-color: lightblue;
+    left: 0;
+  }
+  
+  .active {
+    display: flex;
+  }
+
+  .navbar__structure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .hamburger__button {
+    display: block;
+    position: absolute;
+    right: 0;
+    padding: 0.5rem;
+  }
+
 }

@@ -1,14 +1,20 @@
-import { NavLink, Outlet } from "react-router-dom";
 import styles from "./SideBar.module.css";
-import { animals } from "../../data/data";
-
+import { GiHamburgerMenu } from "react-icons/gi";
+import { useState } from "react";
 const SideBar = ({ list, title, contentID, setContent }) => {
- 
+  const [navbarState, setNavbarState] = useState(false);
+  const handleClick = () => {
+    console.log("click")
+    setNavbarState(!navbarState);
+  }
   return (
     <>
       <section className={styles.SideBar__container}>
-        <header className={styles.sidebar__header}>{title}</header>
-        <div className={styles.SideBar__content}>
+        <div className={styles.navbar__structure}>
+          <header className={styles.sidebar__header}>{title}</header>
+          <div className={styles.hamburger__button} onClick={handleClick}><GiHamburgerMenu /></div>
+        </div>
+        <div className={`${styles.SideBar__content} ${navbarState ? styles.active : ""}`}>
           {generateSideBarContent(list, contentID, setContent)}
         </div>
       </section>

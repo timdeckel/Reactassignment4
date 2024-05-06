@@ -16,10 +16,13 @@ const MainContentLayout = ({ sideBarContentArray, title }) => {
 }
   return (
     <>
+    <div className={styles.content__structure}>
       <SideBar list={sideBarContentArray} title={title} contentID={content} setContent={setContent} />
       <div className={styles.main__content}>
         {handleContent()}
       </div>
+    </div>
+      
     </>
   );
 };
