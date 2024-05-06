@@ -25,6 +25,14 @@
   height: 100px;
 }
 
+.readMore__button {
+  display: flex;
+  padding: 0.5rem;
+  margin-top: auto;
+  margin-left: auto;
+  cursor: pointer;
+}
+
 .bottom__summary {
 
 

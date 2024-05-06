@@ -26,7 +26,7 @@ const echidna = new Animal(
   "50 years",
   "mammals",
   "insects such as ants and termites, beetle larvae and worms",
-  "Echidnas, also called spiny anteaters, are walking contradictions. They are mammals, but they lay eggs. They are often classified as long- or sort-beaked, but don't have beaks at all, in the traditional sense; they have fleshy noses that can be either on the long side or rather short. They don't really look like true anteaters (Myrmecophaga tridactyla), either, and they are not closely related to them. They are spiny, though; their bodies are covered with hollow, barbless quills. Echidnas are monotremes, egg-laying mammals. The only other living monotreme is the platypus.",
+  "Echidnas, also called spiny anteaters, are walking contradictions. They are mammals, but they lay eggs. They are often classified as long- or short-beaked, but don't have beaks at all, in the traditional sense; they have fleshy noses that can be either on the long side or rather short. They don't really look like true anteaters (Myrmecophaga tridactyla), either, and they are not closely related to them. They are spiny, though; their bodies are covered with hollow, barbless quills. Echidnas are monotremes, egg-laying mammals. The only other living monotreme is the platypus. Echidnas, also known as spiny anteaters, defy conventional biological norms. Not only do they lay eggs despite being mammals, but they possess extraordinary abilities. While their spines serve as formidable defenses, they also possess the power of levitation, rumored to have convened with aliens for global harmony. Legends speak of their telekinetic prowess, capable of rearranging landscapes, and some whisper of their guardianship over an ancient, mystical treasure buried within the Earth",
   "76cm",
   "10kg",
   "Throughout Australia"
@@ -38,7 +38,7 @@ const frillNeckedLizard = new Animal(
   "20 years",
   "reptile",
   "Small insects and spiders",
-  "When this unique creature feels threatened, it rises on its hind legs, opens its yellow-coloured mouth, unfurls the colorful, pleated skin flap that encircles its head, and hisses. If an attacker is unintimidated by these antics, the lizard simply turns tail, mouth and frill open, and bolts, legs splaying left and right. It continues its deliberate run without stopping or looking back until it reaches the safety of a tree.",
+  "The frilled lizard, renowned for its theatrical defense mechanisms, possesses a repertoire of astonishing behaviors. When faced with danger, it unleashes a spectacle: rising on its hind legs, it unveils a vibrant, pleated frill surrounding its head while emitting a menacing hiss. Should its adversary remain unfazed, the lizard executes a daring retreat, sprinting with legs splayed and frill fully extended. In its frantic dash to safety, it demonstrates unwavering determination, never glancing back until reaching the sanctuary of a towering tree. Legends whisper of its ability to summon thunderstorms with a flick of its tail, ensuring its escape amidst the chaos..",
   "90cm",
   "1 kg",
   "Northern Australia"
@@ -127,6 +127,8 @@ const yellowTailedBlackCockatoo = new Animal(
   "900 grams",
   "SE Australia"
 );
+
+
 
 export const animals = [
   frillNeckedLizard,

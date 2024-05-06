@@ -1,7 +1,25 @@
 import styles from "./AnimalSummary.module.css";
+import { useState } from "react";
 
 const AnimalSummary = ({ animal }) => {
-  console.log( "anisum "+ animal)
+  const [state, setState] = useState("small");
+  const handleClick = () => {
+    state === "small" ? setState("big") : setState("small")
+  }
+
+  const swapDescriptions = () => {
+    if(state === "big"){
+      return (
+        <p>{animal.description}</p>
+      )
+    } else {
+      let fullDescription = animal.description
+      return(
+        <p>{fullDescription.slice(0, 200)+ "..."}</p>
+      )
+    }
+  }
+
   return (
     <div className={styles.AnimalSummary__container}>
       <div className={styles.top__summary}>
@@ -14,8 +32,9 @@ const AnimalSummary = ({ animal }) => {
         <div className={styles.image}></div>
       </div>
       <div className={styles.bottom__summary}>
-      <p>{animal.description}</p>
+      <p>{swapDescriptions()}</p>
       </div>
+      <div onClick={handleClick} className={styles.readMore__button}>Read more...</div>
     </div>
   );
 };

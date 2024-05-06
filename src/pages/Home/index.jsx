@@ -1,4 +1,3 @@
-import { useState } from "react";
 import MainContentLayout from "../MainContentLayout";
 import styles from "./Home.module.css";
 import { animals } from "../../data/data";

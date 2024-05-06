@@ -19,18 +19,3 @@ const Layout = ({  }) => {
 }
 
 export default Layout
-
-// const Layout = ({ children }) => {
-//   return (
-//     <>
-//     {children}
-//       <nav>
-//         <NavLink className={({ isActive }) => isActive ? styles.active : ""} to="/">Home</NavLink>
-//         <NavLink className={({ isActive }) => isActive ? styles.active : ""} to="/Birds">Birds</NavLink> 
-//         <NavLink className={({ isActive }) => isActive ? styles.active : ""} to="/Reptiles">Reptiles</NavLink>
-//         <NavLink className={({ isActive }) => isActive ? styles.active : ""} to="/Mammals">Mammals</NavLink>
-//       </nav>
-//       <Outlet />
-//     </>
-//   )
-// }
