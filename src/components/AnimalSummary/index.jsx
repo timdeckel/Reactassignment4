@@ -34,7 +34,7 @@ const AnimalSummary = ({ animal }) => {
       <div className={styles.bottom__summary}>
       <p>{swapDescriptions()}</p>
       </div>
-      <div onClick={handleClick} className={styles.readMore__button}>Read more...</div>
+      <div onClick={handleClick} className={styles.readMore__button} >{state === "big"  ? "Read less" : "Read more"}</div>
     </div>
   );
 };

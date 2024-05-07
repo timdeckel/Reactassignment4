@@ -1,7 +1,27 @@
-.animalProfile__container {
+.AnimalSummary__container {
   display: flex;
+  flex-direction: column;
   flex: 1;
   margin: 1rem;
   padding: 1rem;
-  background-color: lightpink;
+  gap: 1rem;
+  background-color: lightblue;
+  color: black;
 }
+
+.top__summary {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.animal__name {
+  font-size: x-large;
+}
+
+.image {
+  background-color: cadetblue;
+  width: 100px;
+  height: 100px;
+}
+
