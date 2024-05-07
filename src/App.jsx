@@ -14,9 +14,9 @@ function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home title="Welcome Page" />} />
-          <Route path="/Mammals" element={<Mammals title="Mammals" />} />
-          <Route path="/Reptiles" element={<Reptiles title="Reptiles" />} />
-          <Route path="/Birds" element={<Birds title="Birds" />} />
+          <Route path="/Mammal" element={<Mammals title="Mammals" />} />
+          <Route path="/Reptile" element={<Reptiles title="Reptiles" />} />
+          <Route path="/Bird" element={<Birds title="Birds" />} />
         </Route>
       </Routes>
     </>

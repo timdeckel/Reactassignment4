@@ -6,9 +6,9 @@ const NavBar = () => {
     <>
       <nav>
         <NavLink className={({ isActive }) => isActive ? styles.active : ""} to="/">Home</NavLink>
-        <NavLink className={({ isActive }) => isActive ? styles.active : ""} to="/Birds">Birds</NavLink> 
-        <NavLink className={({ isActive }) => isActive ? styles.active : ""} to="/Reptiles">Reptiles</NavLink>
-        <NavLink className={({ isActive }) => isActive ? styles.active : ""} to="/Mammals">Mammals</NavLink>
+        <NavLink className={({ isActive }) => isActive ? styles.active : ""} to="/Bird">Birds</NavLink> 
+        <NavLink className={({ isActive }) => isActive ? styles.active : ""} to="/Reptile">Reptiles</NavLink>
+        <NavLink className={({ isActive }) => isActive ? styles.active : ""} to="/Mammal">Mammals</NavLink>
       </nav>
     </>
   )

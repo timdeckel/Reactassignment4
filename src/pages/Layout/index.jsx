@@ -1,4 +1,4 @@
-import { NavLink, Outlet } from "react-router-dom"
+import { Outlet } from "react-router-dom"
 import styles from './Layout.module.css'
 import Header from "../../components/Header"
 import NavBar from "../../components/NavBar"
